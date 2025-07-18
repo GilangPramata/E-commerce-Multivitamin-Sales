@@ -1,0 +1,27 @@
+1. URL Dataset:
+https://www.kaggle.com/datasets/zahidmughal2343/supplement-sales-data
+
+3. Syntax DDL untuk pembuatan table:
+
+CREATE TABLE table_m3 (
+    date DATE,
+    "Product Name" VARCHAR(100),
+    "Category" VARCHAR(50),
+    "Units Sold" INTEGER,
+    "Price" NUMERIC(10, 2),
+    "Revenue" NUMERIC(12, 2),
+    "Discount" NUMERIC(5, 2),
+    "Units Returned" INTEGER,
+    "Location" VARCHAR(50),
+    "Platform" VARCHAR(50)
+);
+
+3. Syntax DML untuk melakukan insert data ke database:
+  3.1. melakukan copy path ke path docker:
+	docker cp "C:/Users/asus/Phase 2/project-m3/dataset/Supplement_Sales_Weekly_Expanded.csv" postgres:/tmp/raw_data.csv
+
+  3.2. query insert di PostgreSQL:
+	COPY table_m3 
+	FROM '/tmp/raw_data.csv' 
+	DELIMITER ',' 
+	CSV HEADER;

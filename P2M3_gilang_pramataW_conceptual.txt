@@ -1,0 +1,30 @@
+Jawab pertanyaan berikut
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+Jawaban
+NoSQL adalah sistem basis data yang tidak detail menggunakan tabel dan kolom karena dirancncang untuk check data yang besar, struktur yang kurang detail, dan sering digunakan untuk melakukan olah dan penyimpanan data yang bersifat fleksibel semacam big data
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+Jawaban
+- Menggunakan NoSQL ketika data yang dianalisa tidak terstruktur tetapi jumlah data sangat banyak dan fleksibel dalam pemodelan data. biasanya untuk Analisa big data dan part pengolahan engan ata JSON
+- Menggunakan Relational Database Management System (RDBMS) Ketika data sudah terstruktur, memiliki query sql yang cukup lengkap dan terstuktur. biasanya digunakan dalam penggunaan data aplikasi yang membutuhkan konsesten dari data yang tinggi
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+Jawaban
+- MongoDB memiliki keunggulan dapat digunakan oleh data dengan format BSON dan query yang simple
+- Cassandra digunakan untuk pengolahan dengan data yang besar, pengolahan realtif cepat, dan fleksibel dalam Analisa berbagai jenis data
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Jawaban
+Airflow adalah platform yang digunakan untuk membuat atau menentukan jadwal Waktu dari suatu alur uang dikerjakannya (flow) 
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Jawaban
+Great Edxpectation adalah Analisa untuk memvalidasi dari data dengan mengetahui kualitas datanya
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+Jawaban
+Batch Processing adalah metode pengolahan data dengan mengolah data yang banyak dalam sekali coba di Waktu yang ditentukan (tidak bersifak realtime saat itu juga) seperti pengolahan atau nalisa penujualan mingguan pada waktu tertentu
+
+Contoh
+pengolahan penjualan per mingguan dari suatu perusahaan untuk analisa penjualan tiap produk. tools yang dipakai apache airflow
