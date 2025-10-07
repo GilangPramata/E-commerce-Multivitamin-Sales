@@ -1,45 +1,44 @@
 # E-commerce, Multivitamin Sales
 
-## Deskripsi Proyek
-Proyek ini bertujuan sebagai laporan mingguan penjualan produk suplemen kesehatan berdasarkan kategori produk, lokasi cabang penjualan, dan analisa penjualan terkait diskon. Laporan ini ditujukan untuk Divisi Marketing dan Sales guna mengevaluasi performa penjualan cabang, platform distribusi, dan segmen produk yang kurang terdistribusi, untuk memperbaiki strategi penjualan dan distribusi produk.
+## Project Overview
+Developed a weekly sales reporting system for health supplement products, analyzing sales performance by product category, sales branch location, and discount impact. The insights support the Sales and Marketing divisions in evaluating branch performance, distribution platform efficiency, and underperforming product segments to refine sales and distribution strategies.
 
-## Pengguna/Penerima Output
-- Divisi Marketing dan Sales
+## Target Audience
+- Sales and Marketing Departments
 
-## Output
-- Analisis data serta visualisasi dalam bentuk plot untuk evaluasi lebih lanjut oleh divisi marketing & sales.
-- Insight penjualan mingguan berdasarkan kategori suplemen, lokasi cabang, dan evaluasi diskon.
+## Deliverables
+- Data analysis and visualization through plots for further evaluation.
+- Weekly sales insights by supplement category, sales branch, and discount effectiveness.
 
 ## Teknologi dan Library yang Digunakan
-- **Docker**: Sistem terpadu yang menjalankan Elasticsearch, Airflow, dan Kibana.
-- **Database**: PostgreSQL untuk penyimpanan dan pembuatan tabel data awal.
+- **Docker**: Integrated environment running Elasticsearch, Airflow, and Kibana.
+- **Database**: PostgreSQL for data storage and initial table creation.
 - **Library Python**:
-  - `pandas`, `datetime`, `timedelta` untuk manipulasi dan pengelolaan data waktu.
-  - `sqlalchemy` dan `psycopg2` untuk koneksi dan operasi pada database PostgreSQL.
-  - `airflow` dan `PythonOperator` untuk pengelolaan workflow otomatis.
-  - `elasticsearch` dan `helpers` untuk indexing dan pencarian data.
-- **Visualisasi**: Kibana untuk dashboard visualisasi data interaktif.
+  - `pandas`, `datetime`, `timedelta` Time series data manipulation and management.
+  - `sqlalchemy` dan `psycopg2` Database connectivity and operations with PostgreSQL.
+  - `airflow` dan `PythonOperator` Workflow automation and pipeline orchestration.
+  - `elasticsearch` dan `helpers` Data indexing and search capabilities.
+- **Visualisasi**: Kibana for interactive, real-time data dashboards.
 
-## Ringkasan Temuan
-- **Pendapatan per Negara**:  
-  - Kanada memiliki pendapatan tertinggi sekitar $31,394,319 dengan diskon rata-rata 12.5%.  
-  - UK menyusul dengan pendapatan sekitar $30,815,841 pada diskon rata-rata 12.4%.  
-  - USA memiliki pendapatan terendah sekitar $29,442,962 dengan diskon rata-rata 12.5%.  
-- **Dampak COVID-19 pada Penjualan**:  
-  - Pada masa pandemi, terjadi peningkatan signifikan pada segmen seperti Vitamin (+30-40%) dan Sleep Aid (+25%) karena kebutuhan kesehatan dan gangguan tidur selama lockdown.  
-  - Segmen Performance dan Protein mengalami penurunan penjualan selama pandemi.  
-  - Setelah pandemi, terjadi normalisasi penjualan dengan beberapa segmen seperti Sleep Aid tetap mengalami peningkatan.  
-- **Analisa Diskon**  
-  Diskon di ketiga negara cenderung stabil dan tidak menjadi faktor utama pendapatan; volume penjualan dan harga produk lebih dominan.  
-- **Rekomendasi Strategi**  
-  - USA perlu strategi baru untuk meningkatkan pendapatannya, mengingat potensi pasar yang besar.  
-  - Fokus pada peningkatan distribusi dan promosi produk yang stagnan atau menurun seperti Fat Burner dan Amino Acid.  
-  - Kemungkinan menggabungkan diskon produk terkait (misal Protein + Hydration, Omega + Herbal) untuk meningkatkan penjualan.
+## Key Findings
+- **Revenue by Country**:  
+  - Canada leads with revenue ~$31.4M and average discount 12.5%.
+  - UK follows with ~$30.8M at 12.4% average discount.
+  - USA records the lowest revenue (~$29.4M) despite a similar average discount (12.5%).
+- **Impact of COVID-19**:  
+  - Sales of Vitamins (+30–40%) and Sleep Aids (+25%) surged during the pandemic due to increased health awareness and sleep disruption.
+  - Sales of Performance and Protein segments declined during lockdowns.
+  - Post-pandemic, most segments normalized, though Sleep Aids remain above pre-pandemic levels.
+- **Discount Analysis**  
+  Discounts remained stable across countries and are not a primary driver of revenue; unit volume and pricing have a greater impact.
+- **Strategic Recommendations**  
+  - Implement new market strategies for the USA to tap into its high-potential market.
+  - Re-evaluate distribution and promotional efforts for stagnant or declining products (e.g., Fat Burner, Amino Acid).
+  - Test bundled promotions (e.g., Protein + Hydration, Omega + Herbal) to boost cross-selling.
 
-## Cara Penggunaan
-1. Jalankan sistem terpadu menggunakan Docker yang mencakup Elasticsearch, Airflow, dan Kibana.  
-2. Siapkan database PostgreSQL dan buat tabel data sesuai dengan kebutuhan proyek.  
-3. Gunakan skrip Python ETL untuk ekstraksi, transformasi, dan pemuatan data ke PostgreSQL dan Elasticsearch.  
-4. Jalankan DAG Airflow untuk otomatisasi pipeline data dan refresh visualisasi di Kibana.  
-5. Akses dashboard Kibana untuk melihat hasil visualisasi dan analisa penjualan.
-
+## Usage Instructions
+1. Launch the integrated system using Docker (Elasticsearch, Airflow, Kibana).
+2. Set up a PostgreSQL database and create the required data tables.
+3. Run Python ETL scripts to extract, transform, and load data into PostgreSQL and Elasticsearch.
+4. Execute Airflow DAGs to automate pipeline processing and refresh Kibana dashboards.
+5. Access the Kibana dashboard for real-time visualizations and sales analytics.
